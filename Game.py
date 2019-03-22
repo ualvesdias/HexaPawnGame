@@ -42,14 +42,14 @@ while True:
 		convertedMove = game.boardGame.convertMove(humanMove)
 		if not convertedMove:
 			print('Invalid move format. Try again!')
-			sleep(5)
+			sleep(3)
 			continue
 		if game.makeMove(convertedMove[0], convertedMove[1]):
 			if game.checkWin():
 				game.humanWins += 1
 				game.machine.learn(False)
 				clear()
-				print('\n%s, you have won this game! %s has learnd from its mistakes!' % (game.humanName. game.cpuName))
+				print('\n%s, you have won this game! %s has learned from its mistakes!' % (game.humanName, game.cpuName))
 				print('%s has %i victories.' % (game.humanName, game.humanWins))
 				print('%s has %i victories.' % (game.cpuName, game.machineWins))
 				sleep(5)
@@ -59,7 +59,7 @@ while True:
 				game.round += 1
 		else:
 			print('Invalid move! Try again!')
-			sleep(5)
+			sleep(3)
 			continue
 	else:
 		machineMove = game.machine.chooseMove(game.boardGame.getBoardState(), game.round)
