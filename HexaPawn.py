@@ -1,5 +1,6 @@
 import Board as b
 import Machine as m
+from time import sleep
 
 
 class HexaPawn(object):
@@ -41,10 +42,8 @@ class HexaPawn(object):
 				if self.boardGame.board[i,j] != 0:
 					try:	
 						if self.playerToMove == 0 and self.boardGame.board[i,j] == 2:
-							print(i,j)
 							for col in [-1,0,1]:
-								print(col,i+1,j+col)
-								if self.boardGame.isMoveValid([i,j],[i+1,j+col], self.playerToMove +1):
+								if self.boardGame.isMoveValid([i,j],[i+1,j+col], self.playerToMove + 1):
 									return False
 						elif self.playerToMove == 1 and self.boardGame.board[i,j] == 1:
 							for col in [-1,0,1]:
