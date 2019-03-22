@@ -1,5 +1,5 @@
 # HexaPawnGame
-A Python implementation of the game Hexapawn, described in the "Mathematical Games" section of the American Scientific magazine, March, 1962.
+A Python implementation of the game Hexapawn, described in the "Mathematical Games" section of the Scientific American magazine, March, 1962.
 
 As described by Gardner, the goal of the game is to show how to build a machine that can learn from its mistakes, as well as victories, because it learns the bad and good moves if it loses or wins a round, respectively.
 
