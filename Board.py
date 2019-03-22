@@ -1,6 +1,5 @@
 import numpy as np
 
-
 class Board(object):
 	"""Loads and updates the boardgame"""
 	def __init__(self):
@@ -27,12 +26,25 @@ class Board(object):
 		self.board[fr[0],fr[1]] = 0
 
 	def isMoveValid(self, fr, to, player):
+		if to[1] == -1:
+			return False
 		if player == 0:
-			print('0')
-			return (((fr[0] - to[0] == 1 and fr[1] == to[1]) and self.board[to[0],to[1]] == 0) or ((fr[0] - to[0] == 1 and abs(fr[1] - to[1]) == 1) and (self.board[to[0],to[1]] != 0 and self.board[to[0],to[1]] != self.board[fr[0],fr[1]])))
-		else:
-			print('1')
-			return (((fr[0] - to[0] == -1 and fr[1] == to[1]) and self.board[to[0],to[1]] == 0) or ((fr[0] - to[0] == -1 and abs(fr[1] - to[1]) == 1) and (self.board[to[0],to[1]] != 0 and self.board[to[0],to[1]] != self.board[fr[0],fr[1]])))
+			if (fr[0] - to[0] == 1) and (fr[1] == to[1]):
+				if self.board[to[0],to[1]] == 0:
+					return True
+			if (fr[0] - to[0] == 1) and (abs(fr[1] - to[1]) == 1):
+				if self.board[to[0],to[1]] != 0 and self.board[to[0],to[1]] != self.board[fr[0],fr[1]]:
+					return True
+		elif player == 1:
+			'''Test of forward move'''
+			if (fr[0] - to[0] == -1) and (fr[1] == to[1]):
+				if self.board[to[0],to[1]] == 0:
+					return True
+			'''Test of capture movement'''
+			if (fr[0] - to[0] == -1) and (abs(fr[1] - to[1]) == 1):
+				if self.board[to[0],to[1]] != 0 and self.board[to[0],to[1]] != self.board[fr[0],fr[1]]:
+					return True
+		return False
 
 	def printBoard(self):
 		print('    0   1   2  ')
@@ -45,3 +57,4 @@ class Board(object):
 			for j in range(3):
 				self.state += str(self.board[i,j])
 		return self.state
+
