@@ -14,7 +14,7 @@ This game is a very simplified version of chess, containing only three pawns for
 |    |   |    |  
 | * | * | * |  
 
-A human plays against a machine and the machine initially does not know how to play the game. The human always plays first and they alternate their moves, which are identical to the pawn moves on a traditional chess game, except for the fact that thare is no pawn promotion, no en passant and there is no option for moving two squares forward on the first movement of each pawn.
+A human plays against a machine and the machine initially does not know how to play the game. The human always plays first and they alternate their moves, which are identical to the pawn moves on a traditional chess game, except for the fact that there is no pawn promotion, no en passant and there is no option for moving two squares forward on the first movement of each pawn.
 
 The game objective is to win by placing one of your pawns on the opposite extreme row (the initial row of your opponent), taking all of your opponent pawns or by leaving him with no legal moves on his next move.
 
