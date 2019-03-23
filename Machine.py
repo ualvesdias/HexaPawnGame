@@ -1,4 +1,4 @@
-import random as rd
+from random import choice
 
 
 class Machine(object):
@@ -32,7 +32,7 @@ class Machine(object):
 	def chooseMove(self, boardState, currentRound):
 		self.boardState = boardState
 		self.currentRound = currentRound
-		self.move = rd.choice(self.table[self.currentRound][self.boardState])
+		self.move = choice(self.table[self.currentRound][self.boardState])
 		return self.move
 
 	def learn(self, win):
