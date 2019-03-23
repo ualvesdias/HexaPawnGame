@@ -5,7 +5,7 @@ As described by Gardner, the goal of the game is to show how to build a machine 
 
 As you play against the machine, you can see that at first, it makes really bad moves. But as the rounds go by, it starts to learn which moves are bad, discarting them, and which are good, keeping them as the only possible moves for a given board configuration.
 
-http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf
+http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf  
 https://www.youtube.com/watch?v=sw7UAZNgGg8
 
 # How to play the game
