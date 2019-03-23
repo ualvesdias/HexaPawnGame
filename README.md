@@ -18,6 +18,6 @@ A human plays against a machine and the machine initially does not know how to p
 
 The game objective is to win by placing one of your pawns on the opposite row (the initial row of your opponent), taking all of your opponent pawns or by leaving him with no legal moves on his next move.
 
-As you play, whether the machine wins or loses, it learns by knowing which moves led to its win/loss. If it wins, it keeps the winning move and discards all of the other moves from the winning position. This is ther "reward" it gets by winning the reound. If it loses, it discards the last move, which is the one that allowed the loss. This is the "punishment" it gets for its loss.
+As you play, whether the machine wins or loses, it learns by knowing which moves led to its win/loss. If it wins, it keeps the winning move and discards all of the other moves from the winning position. This is the "reward" it gets by winning the reound. If it loses, it discards the last move, which is the one that allowed the loss. This is the "punishment" it gets for losing.
 
-This way, after a few games played, it starts to play more and more moves that are not leading to a defeat, until it plays perfectly.
+This way, after a few games played, it starts to play better, until it plays perfectly.
