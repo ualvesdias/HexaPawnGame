@@ -16,7 +16,7 @@ This game is a very simplified version of chess, containing only three pawns for
 
 A human plays against a machine and the machine initially does not know how to play the game. The human always plays first and they alternate their moves, which are identical to the pawn moves on a traditional chess game, except for the fact that there is no pawn promotion, no en passant and it's not possible to move two squares forward on the first movement of each pawn.
 
-The game objective is to win by placing one of your pawns on the opposite extreme row (the initial row of your opponent), taking all of your opponent pawns or by leaving him with no legal moves on his next move.
+The game objective is to win by placing one of your pawns on the opposite row (the initial row of your opponent), taking all of your opponent pawns or by leaving him with no legal moves on his next move.
 
 As you play, whether the machine wins or loses, it learns by knowing which moves led to its win/loss. If it wins, it keeps the winning move and discards all of the other moves from the winning position. This is ther "reward" it gets by winning the reound. If it loses, it discards the last move, which is the one that allowed the loss. This is the "punishment" it gets for its loss.
 
