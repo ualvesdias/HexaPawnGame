@@ -1,6 +1,5 @@
 import Board as b
 import Machine as m
-from time import sleep
 
 
 class HexaPawn(object):
