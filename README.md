@@ -14,7 +14,7 @@ This game is a very simplified version of chess, containing only three pawns for
 
 | @ | @ | @ |
 
-|   |   |   |
+| _ | _ | _ |
 
 | # | # | # |
 
