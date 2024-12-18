@@ -50,7 +50,7 @@ class Board(object):
         print('    0   1   2  ')
         boardPieces = [' ', '#', '@']
         for i in range(3):
-            print(f'{i} | {boardPieces[self.board[i,0]]} | {boardPieces[self.board[i,1]]} | {boardPieces[self.board[i,2]]}')
+            print(f'{i} | {boardPieces[self.board[i,0]]} | {boardPieces[self.board[i,1]]} | {boardPieces[self.board[i,2]]} |')
 
     def getBoardState(self):
         self.state = ''
