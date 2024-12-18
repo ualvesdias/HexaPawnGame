@@ -5,16 +5,16 @@ As described by Gardner, the goal of the game is to show how to build a machine 
 
 As you play against the machine, you can see that at first, it makes really bad moves. But as the rounds go by, it starts to learn which moves are bad, discarting them, and which are good, keeping them as the only possible moves for a given board configuration.
 
-http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf  
-https://www.youtube.com/watch?v=sw7UAZNgGg8  
-https://t.me/hexapawnbot
+- [Martin Gardner's Mathematical Games from 1962](http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf)
+- [VSauce2 Video](https://www.youtube.com/watch?v=sw7UAZNgGg8)
 
 # How to play the game
+
 This game is a very simplified version of chess, containing only three pawns for each player and it's played on a 3x3 board, where the pawns initially ocupy the first and last rows of the board.
 
-| * | * | * |  
-|    |   |    |  
-| * | * | * |  
+| @ | @ | @ |
+|   |   |   |
+| # | # | # |
 
 A human plays against a machine and the machine initially does not know how to play the game. The human always plays first and they alternate their moves, which are identical to the pawn moves on a traditional chess game, except for the fact that there is no pawn promotion, no en passant and it's not possible to move two squares forward on the first movement of each pawn.
 
