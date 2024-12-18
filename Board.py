@@ -51,7 +51,6 @@ class Board(object):
         boardPieces = [' ', '#', '@']
         for i in range(3):
             print(f'{i} | {boardPieces[self.board[i,0]]} | {boardPieces[self.board[i,1]]} | {boardPieces[self.board[i,2]]}')
-            #print('%i | %s | %s | %s |' % (i,self.board[i,0],self.board[i,1],self.board[i,2]))
 
     def getBoardState(self):
         self.state = ''
