@@ -13,7 +13,9 @@ As you play against the machine, you can see that at first, it makes really bad 
 This game is a very simplified version of chess, containing only three pawns for each player and it's played on a 3x3 board, where the pawns initially ocupy the first and last rows of the board.
 
 | @ | @ | @ |
+
 |   |   |   |
+
 | # | # | # |
 
 A human plays against a machine and the machine initially does not know how to play the game. The human always plays first and they alternate their moves, which are identical to the pawn moves on a traditional chess game, except for the fact that there is no pawn promotion, no en passant and it's not possible to move two squares forward on the first movement of each pawn.
